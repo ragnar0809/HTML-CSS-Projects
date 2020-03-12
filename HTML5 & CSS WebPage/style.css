@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background: gainsboro;
+    animation: anim-body;
+    animation-duration: 10s;
+    
+}
+#container{
+    background: silver;
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+
+}
+    header{
+        background: cadetblue;
+        width: 1000px;
+        height: 100px;
+        border-radius: 5px;
+
+    }
+        h1{
+            text-align: center;
+            padding: 25px 0;
+            color: cornsilk;
+            
+        }
+    nav{
+        background: cadetblue;
+        width: 1000px;
+        height: 50px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+        nav ul{}
+            nav li{
+                float: left;
+                padding: 16px 20px;
+                list-style-type: none;
+                border-radius: 5px;
+            }
+            nav li:hover{
+                background: cornsilk;
+                cursor: pointer;
+            }
+    main{
+        background: silver;
+        width: 1000px;
+        height: 890px;
+        border-radius: 5px;
+    }
+        #sec1{
+            float: left;
+            width: 650px;
+            
+        }
+        #sec2{
+            float: right;
+            width: 320px;
+           
+
+        }
+            aside{
+                background: slategrey;
+                padding: 20px;
+                margin: 10px 0;
+                border-radius: 5px;
+            }
+                .list-heading{
+                    font-size: 23px;
+                    text-align: center;
+                    margin: 10px;
+                }
+                .list_data{
+
+                }
+                .lists{
+                    background: brown;
+                    color: white;
+                    border: 1px solid black;
+                    margin: 5px 0;
+                    padding: 5px;
+                    transition: padding 0.5s;
+                    border-radius: 5px;
+                }
+                    .lists:hover{
+                        background: silver;
+                        cursor: pointer;
+                        padding: 10px;
+                    }
+                aside input{
+                    width: 280px;
+                    height: 40px;
+                    box-shadow: inset 0 0 5px silver;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                }
+                aside button{
+                    width: 280px;
+                    height: 40px;
+                    border: 1px solid black;
+                    background: brown;
+                    color: white;
+                    font-size: 18px;
+                    margin: 10px 0;
+                    border-radius: 5px;
+                }
+                    aside button:hover{
+                        background: black;
+                        cursor: pointer;
+                    }
+            article{
+                background: cadetblue;
+                padding: 20px;
+                margin: 10px 0;
+                border-radius: 5px;
+            }
+                .title{
+                    color: red;
+                    margin: 0 20px;
+                    font-size: 25px;
+                    font-weight: bold;
+                    
+                }
+                .description{
+                    margin: 10px 0;
+                    font-size: 17px;
+                    line-height: 20px;
+                }
+                .metadata{
+                    margin: 10px 0;
+                    color: blue;
+                    font-family: arial;
+                }
+    footer{
+        background: silver;
+        width: 960px;
+        margin: 20px 0;
+        text-align: center;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+@keyframes anim-body{
+    
+    0%{background: gainsboro;}
+    25%{background: tan;}
+    50%{background: gainsboro;}
+    75%{background: tan;}
+    100%{background: gainsboro;}
+}
